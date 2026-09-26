@@ -12,7 +12,10 @@ A decoder-only transformer written from scratch in NumPy (no PyTorch, no framewo
 
 The workload is a customer-support copilot for a fictional card issuer: a 1,759-token policy prompt, two customers, three messages each, arriving interleaved, exactly the pattern a production chatbot sees.
 
-![Results overview](docs/slide-07.png)
+<p align="center">
+  <img src="docs/slide-04.png" alt="Experiment 1: per-token latency, no cache vs KV cache" width="49%">
+  <img src="docs/slide-07.png" alt="Experiment 2: time to first token on the support copilot" width="49%">
+</p>
 
 ## Results
 
@@ -95,7 +98,8 @@ bench/
   run_benchmarks.py all experiments -> results/results.json
   report.py         headline tables
 docs/
-  slide-07.png      results overview image used above
+  slide-04.png      Experiment 1 chart (per-token latency)
+  slide-07.png      Experiment 2 chart (time to first token)
 hf_demo.py          same idea on GPT-2 via Hugging Face
 ```
 
