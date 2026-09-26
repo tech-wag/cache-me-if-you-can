@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.ipynb_checkpoints/
+
+# Benchmark scratch output (results/results.json is kept)
+results/run.log
+results/results_quick.json
+
+# LinkedIn post, carousel and slides (not part of the project)
+linkedin/
+
+# Secrets and credentials
+.env
+.env.*
+*.pem
+*.key
+secrets*
+credentials*
+.huggingface/
+hf_token*
+
+# Model downloads / caches
+.cache/
+*.safetensors
+*.bin
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
